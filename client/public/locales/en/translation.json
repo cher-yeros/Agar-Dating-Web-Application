@@ -1,0 +1,17 @@
+{
+  "view_products": "View Product",
+  "users": "Users",
+  "feedback": "Feedback",
+  "read_feedback": "Read Feedback",
+  "dashboard": "Dashboard",
+  "admin": "Admin",
+  "profile": "Profile",
+  "get_info": "Get information",
+  "contact_us": "Contact us",
+  "home": "Home",
+  "update_chatbot": "Update chatbot",
+  "logout": "Logout",
+  "language": "Language",
+  "register": "Register",
+  "agar_img": "images/agar-en.png"
+}

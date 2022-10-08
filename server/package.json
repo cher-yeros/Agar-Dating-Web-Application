@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "agar": "nodemon index.js",
+    "migrate": "node ./models/schema",
+    "seed": "node ./utils/seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "faker": "^5.5.3",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
+  }
+}

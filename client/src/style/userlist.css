@@ -1,0 +1,18 @@
+.user-list-ul {
+    background: rgb(118, 119, 149);
+    color: whitesmoke;
+    margin: 0;
+    height: 85vh;
+    /*overflow-y: scroll;*/
+    position: absolute;
+    bottom: 2px;
+    padding: 0 !important;
+
+}
+.user-list {
+    border-bottom: 1px solid rgb(170, 170, 170);
+    padding: 0px;
+    padding-left: 10px;
+    background: #767795;
+    color: whitesmoke
+}

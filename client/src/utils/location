@@ -1,0 +1,63 @@
+//let userLocation = {
+//  latitude: localStorage.getItem("latitude"),
+//  longitude: localStorage.getItem("longitude"),
+//};
+
+//location();
+
+class Location {
+  constructor() {
+    this.options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0,
+    };
+
+    this.location();
+    console.log(this.userLocation);
+  }
+
+  location() {
+    console.log("jere");
+    if (navigator.geolocation) {
+      navigator.permissions
+        .query({ name: "geolocation" })
+        .then(function(result) {
+          if (result.state === "granted") {
+            navigator.geolocation.getCurrentPosition((pos) => {
+              this.userLocation = {
+                latitude: pos.coords.latitude,
+                longitude: pos.coords.longitude,
+              };
+              console.log(pos.coords);
+            });
+          } else if (result.state === "prompt") {
+            navigator.geolocation.getCurrentPosition(
+              (pos) => {
+                this.userLocation = {
+                  latitude: pos.coords.latitude,
+                  longitude: pos.coords.longitude,
+                };
+                console.log(pos.coords);
+              },
+              this.errors,
+              this.options
+            );
+          } else if (result.state === "denied") {
+            alert("Location Access Denied!");
+          }
+          result.onchange = function() {
+            console.log(result.state);
+          };
+        });
+    } else {
+      alert("Geo Location not available!");
+    }
+  }
+
+  errors(err) {
+    alert(`ERROR(${err.code}): ${err.message}`);
+  }
+}
+
+export default Location;

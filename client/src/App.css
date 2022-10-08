@@ -1,0 +1,69 @@
+body {
+  overflow: hidden;
+}
+.modal-50w {
+  width: 35vw !important;   /* Occupy the 90% of the screen width */
+  max-width: 35vw !important;
+}
+
+.modal-60w {
+  width: 55vw !important;   /* Occupy the 90% of the screen width */
+  max-width: 55vw !important;
+}
+.modal-40w {
+  width: 40vw !important;   /* Occupy the 90% of the screen width */
+  max-width: 40vw !important;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.icon-of-admin {
+  font-size: 6rem !important;
+  padding: 0;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.text-of-admin {
+  font-size: 1.5rem !important;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.cardi {
+  transition: bottom 5s linear !important;
+}
+
+.cardi:hover {
+  position: relative;
+  bottom: 5px;
+  background-color: whitesmoke;
+}
+
+/*::-webkit-scrollbar {
+  width:6px;
+}
+::-webkit-scrollbar-track {
+  position: absolute;
+    width: 6px;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 3px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 5px;
+  position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 81px;
+    transform: translateY(0px);
+}*/
